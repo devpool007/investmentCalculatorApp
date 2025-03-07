@@ -1,7 +1,8 @@
 export default function UserInput({userInput, setUserInput}) {
+
   function handleInputChange(event) {
     const { name, value } = event.target;
-    setUserInput((prev) => ({ ...prev, [name]: value }));
+    setUserInput((prev) => ({ ...prev, [name]: +value }));
   }
 
   return (
