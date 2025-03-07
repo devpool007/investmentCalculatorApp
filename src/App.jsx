@@ -2,6 +2,7 @@ import { useState } from "react";
 import Header from "./components/Header";
 import UserInput from "./components/UserInput";
 import Results from "./components/Results";
+import Footer from "./components/Footer";
 
 function App() {
 
@@ -20,6 +21,7 @@ const inputIsValid = userInput.initialInvestment >=0 && userInput.annualInvestme
       <UserInput userInput={userInput} setUserInput={setUserInput} />
       {!inputIsValid && <p className="center">Please enter valid input. Negatives are not allowed!</p>}
       {inputIsValid && <Results input={userInput}/>}
+      <Footer />
     </>
   );
 }
