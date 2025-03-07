@@ -1,7 +1,24 @@
+import { useState } from "react";
+import Header from "./components/Header";
+import UserInput from "./components/UserInput";
+import Results from "./components/Results";
+
 function App() {
+
+  const [userInput, setUserInput] = useState({
+    initialInvestment: 1000,
+    annualInvestment: 3600,
+    expectedReturn: 7,
+    duration: 10,
+});
+
   return (
-    <h1>React Investment Calculator</h1>
-  )
+    <>
+      <Header />
+      <UserInput userInput={userInput} setUserInput={setUserInput} />
+      <Results input={userInput}/>
+    </>
+  );
 }
 
-export default App
+export default App;
