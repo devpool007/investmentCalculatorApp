@@ -67,7 +67,6 @@ body {
 #result {
   max-width: 50rem;
   margin: 2rem auto;
-  padding: 1rem;
   table-layout: fixed;
   border-spacing: 1rem;
   text-align: left;
@@ -92,8 +91,6 @@ footer {
   text-align: center;
   padding: 1em;
   background: linear-gradient(180deg, #307e6c, #2b996d);
-  position: fixed;
-  bottom: 0;
   width: 100%;
 }
 
